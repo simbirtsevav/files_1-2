@@ -37,5 +37,6 @@ def get_shop_list_by_dishes(dishes, person_count):
                 dish_dict[ingridient['ingridient_name']] = {'measure': ingridient['measure'],
                                                             'quantity': count}
                 print('Список покупок: ', dish_dict)
+                return
 print(book('recipes.txt'))
 get_shop_list_by_dishes(['Омлет', 'Фахитос', 'Утка по-пекински'], 2)
